@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engr. Malik. | Creative Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+  <!-- Three.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Portfolio Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="#hero" class="logo">Engr. Malik<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" role="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+    <span class="mobile-menu-close" id="mobile-close" aria-label="Close menu">&#215;</span>
+    <a href="#about"      class="mob-link">About</a>
+    <a href="#skills"     class="mob-link">Skills</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects"   class="mob-link">Projects</a>
+    <a href="#contact"    class="mob-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Portfolio &mdash; Mechanical Engineer &amp; Digital Brand Strategist</span>
+      <h1 class="hero-name">Malik Wahab</h1>
+      <p class="hero-subtitle">Creative Engineer</p>
+      <p class="hero-body">Bridging cinematic AI generation, digital transformation, and high-volume operations.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <span class="section-label">About</span>
+          <h2 class="section-title">Systems Thinking,<br>Applied Everywhere</h2>
+          <p>I am a <span class="about-highlight">Mechanical Engineering</span> graduate of the University of Ilorin &mdash; a discipline that taught me something far broader than thermodynamics and material science: it taught me how to see any environment as a system. From stress distribution in a steel truss to supply-chain velocity in a high-volume depot, the engineering lens remains the same &mdash; identify inputs, optimise processes, and deliver measurable outputs.</p>
+          <p>That systems-thinking now powers a dual career. On the operations side, I have managed logistics and quality-control workflows for fast-moving consumer goods, driving efficiency across physical depot operations. On the digital side, I architect brand identities, automate marketing pipelines, and direct cinematic AI-generated content &mdash; applying the same rigour and precision I learned in the engineering lab.</p>
+          <p>The result is a rare hybrid: a professional who can translate between warehouse floor and creative studio, between Excel models and AI image-generation tools, between procurement contracts and brand positioning strategy.</p>
+        </div>
+        <div class="about-sidebar reveal reveal-d2">
+          <div class="stat-card">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Years in Operations Management</div>
+            <span class="discipline-badge">Supply Chain &middot; Quality Control</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years in Digital Brand Management</div>
+            <span class="discipline-badge">AI Content &middot; SEO &middot; Automation</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">B.Eng</div>
+            <div class="stat-label">Mechanical Engineering</div>
+            <span class="discipline-badge">University of Ilorin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Competencies</span>
+        <h2 class="section-title">Discipline &amp; Craft</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal reveal-d1">
+          <div class="skill-card-head">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="skill-cat-name">AI &amp; Creative</div>
+          </div>
+          <ul class="skill-items">
+            <li class="skill-item"><span class="skill-diamond"></span>Sora 2 (Text-to-Video)</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Prompt Engineering</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Midjourney / DALL&middot;E</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Cinematic Storytelling</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Brand Visual Identity</li>
+            <li class="skill-item"><span class="skill-diamond"></span>AI Creative Direction</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal reveal-d2">
+          <div class="skill-card-head">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+            </div>
+            <div class="skill-cat-name">Operations</div>
+          </div>
+          <ul class="skill-items">
+            <li class="skill-item"><span class="skill-diamond"></span>Supply Chain Management</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Quality Control (QC/QA)</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Logistics Coordination</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Inventory Management</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Vendor Relations</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Process Optimisation</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal reveal-d3">
+          <div class="skill-card-head">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="skill-cat-name">Digital</div>
+          </div>
+          <ul class="skill-items">
+            <li class="skill-item"><span class="skill-diamond"></span>HubSpot CRM</li>
+            <li class="skill-item"><span class="skill-diamond"></span>SEO &amp; Content Strategy</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Workflow Automation</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Social Media Management</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Email Marketing</li>
+            <li class="skill-item"><span class="skill-diamond"></span>Analytics &amp; Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Cinematic Work</h2>
+      </div>
+      <div class="projects-grid">
+        <a href="https://youtube.com/shorts/9Lbrj9f2D6k?si=HgizRb6miY6fif79" target="_blank" rel="noopener noreferrer" class="project-link reveal reveal-d1">
+          <div class="project-card">
+            <video autoplay loop muted playsinline preload="none" aria-label="Mr. Shafts Cinematic Series Part 1 preview"><source src="" type="video/mp4" /></video>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a0c02 0%,#3d1f05 50%,#100800 100%);z-index:0;"></div>
+            <div class="project-overlay"></div>
+            <div class="project-arrow-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </div>
+            <div class="project-body">
+              <div class="project-series">Mr. Shafts &middot; AI Cinematic &middot; Part I</div>
+              <h3 class="project-title">Mr. Shafts Cinematic<br>Series &mdash; Part 1</h3>
+              <p class="project-desc">An AI-directed cinematic short exploring bold visual identity through Sora&nbsp;2 generation and precision prompt engineering.</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/shorts/9f3ndN_9-nQ?si=RzpsPIfeuNGx53x5" target="_blank" rel="noopener noreferrer" class="project-link reveal reveal-d2">
+          <div class="project-card">
+            <video autoplay loop muted playsinline preload="none" aria-label="Mr. Shafts Cinematic Series Part 2 preview"><source src="" type="video/mp4" /></video>
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0d0602 0%,#2e1504 50%,#160b00 100%);z-index:0;"></div>
+            <div class="project-overlay"></div>
+            <div class="project-arrow-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </div>
+            <div class="project-body">
+              <div class="project-series">Mr. Shafts &middot; AI Cinematic &middot; Part II</div>
+              <h3 class="project-title">Mr. Shafts Cinematic<br>Series &mdash; Part 2</h3>
+              <p class="project-desc">The second chapter of the AI-generated series &mdash; deepening the narrative language through advanced cinematic framing and motion design.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Professional Timeline</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal reveal-d1">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2021 &mdash; 2023</div>
+          <h3 class="tl-role">Operations Coordinator</h3>
+          <div class="tl-company">Rotmox Paints &mdash; Lagos, Nigeria</div>
+          <p class="tl-desc">Oversaw production-line quality control and coordinated inbound raw-material logistics for a mid-scale paint manufacturing operation. Applied mechanical engineering principles to identify process inefficiencies, reducing material wastage through structured QA protocols and vendor performance reviews.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Quality Control</span>
+            <span class="tl-tag">Raw Materials Procurement</span>
+            <span class="tl-tag">Process Improvement</span>
+            <span class="tl-tag">Vendor Management</span>
+          </div>
+        </div>
+        <div class="tl-item reveal reveal-d2">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2022 &mdash; 2024</div>
+          <h3 class="tl-role">Logistics Manager</h3>
+          <div class="tl-company">Drinks Depot &mdash; Nigeria</div>
+          <p class="tl-desc">Led end-to-end logistics operations for a high-volume FMCG distribution depot. Managed a team responsible for order fulfilment, route planning, and inventory reconciliation. Implemented data-driven stock management systems that improved order accuracy and reduced delivery lead times across key distribution routes.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Supply Chain</span>
+            <span class="tl-tag">Inventory Management</span>
+            <span class="tl-tag">Team Leadership</span>
+            <span class="tl-tag">FMCG Distribution</span>
+          </div>
+        </div>
+        <div class="tl-item reveal reveal-d3">
+          <div class="tl-dot"></div>
+          <div class="tl-period">2023 &mdash; Present</div>
+          <h3 class="tl-role">Freelance Digital Brand Manager</h3>
+          <div class="tl-company">Independent &middot; Remote</div>
+          <p class="tl-desc">Providing end-to-end digital brand management and AI creative direction for clients across lifestyle, entertainment, and B2B sectors. Services span brand strategy, SEO-led content production, HubSpot CRM implementation, workflow automation, and cinematic AI content creation &mdash; most notably the ongoing Mr. Shafts Cinematic Series produced with Sora 2 and advanced prompt engineering.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">AI Content (Sora 2)</span>
+            <span class="tl-tag">Brand Strategy</span>
+            <span class="tl-tag">HubSpot</span>
+            <span class="tl-tag">SEO</span>
+            <span class="tl-tag">Workflow Automation</span>
+            <span class="tl-tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Start a Conversation</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="reveal reveal-d1">
+          <p class="contact-tagline">Whether you have a brand to build, a creative project requiring AI direction, or an operations challenge to solve &mdash; let's talk.</p>
+          <div class="contact-detail">
+            <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="c-detail-inner"><strong>Email</strong><a href="mailto:engr.malikwahab@gmail.com">engr.malikwahab@gmail.com</a></div>
+          </div>
+          <div class="contact-detail">
+            <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.02-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg></div>
+            <div class="c-detail-inner"><strong>Phone</strong><a href="tel:+2349058977233">09058977233</a></div>
+          </div>
+          <div class="contact-detail">
+            <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="c-detail-inner"><strong>Location</strong><span>Nigeria &mdash; Available Remotely</span></div>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="soc-btn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/mr_shafts_" target="_blank" rel="noopener" class="soc-btn">
+              <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              @mr_shafts_
+            </a>
+          </div>
+        </div>
+        <div class="reveal reveal-d2">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can I help?" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              Send Message
+              <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success">&#10003; &nbsp;Thank you &mdash; message received. I'll be in touch shortly.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Engr. Malik<span style="color:var(--rust);font-style:italic">.</span></span>
+    <span class="footer-copy">&copy; <span id="year"></span> Malik Wahab. All rights reserved.</span>
+  </footer>
+
+  <!-- Portfolio Script -->
+  <script src="main.js"></script>
+
+</body>
+</html>
