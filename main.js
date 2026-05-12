@@ -69,6 +69,9 @@ revealEls.forEach(el => revealObserver.observe(el));
    Replace the setTimeout block with your
    preferred backend / Netlify Forms / EmailJS
 ───────────────────────────────────────── */
+/* ─── CONTACT FORM — EMAILJS ─── */
+emailjs.init('wYzmWg-iEKVnstYv6'); // ← paste your Public Key here
+
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function (e) {
@@ -76,23 +79,36 @@ contactForm.addEventListener('submit', function (e) {
 
   const btn     = this.querySelector('.btn-submit');
   const success = document.getElementById('form-success');
+  const error   = document.getElementById('form-error');
 
   btn.textContent = 'Sending…';
   btn.disabled    = true;
 
-  /* Swap this block for a real fetch() / EmailJS call */
-  setTimeout(() => {
-    success.style.display = 'block';
-    this.reset();
-    btn.innerHTML = `Send Message
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none"
-           stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round">
-        <line x1="22" y1="2" x2="11" y2="13"/>
-        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-      </svg>`;
-    btn.disabled = false;
-  }, 1200);
+  const templateParams = {
+    from_name:  document.getElementById('name').value,
+    from_email: document.getElementById('email').value,
+    subject:    document.getElementById('subject').value,
+    message:    document.getElementById('message').value,
+  };
+
+  emailjs.send('portfolio_service', 'template_crmrbfz', templateParams)
+    .then(() => {
+      success.style.display = 'block';
+      if (error) error.style.display = 'none';
+      this.reset();
+      btn.innerHTML = 'Message Sent ✓';
+      btn.disabled  = false;
+      setTimeout(() => {
+        btn.innerHTML = 'Send Message';
+        success.style.display = 'none';
+      }, 5000);
+    })
+    .catch((err) => {
+      console.error('EmailJS error:', err);
+      if (error) error.style.display = 'block';
+      btn.textContent = 'Send Message';
+      btn.disabled    = false;
+    });
 });
 
 /* ─────────────────────────────────────────
